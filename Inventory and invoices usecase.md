@@ -137,8 +137,8 @@ Go to your CloudTDMS web portal:
             "display": true
         }
     ]
-}
-    ```
+   }
+   ```
       In this stream, we are: 
     * Generating `Products` after one or every month adding about 5 products and is treated as referance data for invoices.
     * fetching the data from one machine with connection name "conn_machine"
