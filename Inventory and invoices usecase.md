@@ -302,7 +302,7 @@ Let's set up the stream which will fetch the data from the database (on which we
             "display": true
         }
     ]
-}
+   }
     ```
     
     In this stream, we are:  
