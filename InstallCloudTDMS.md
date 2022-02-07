@@ -100,13 +100,16 @@ sudo mv /home/${USER}/.symfony/bin/symfony /usr/local/bin/symfony
 
 ## Installing CloudTDMS
 ```
-cd /var/www/html/
-```
-```
-sudo git clone https://github.com/Cloud-Innovation-Partners/CloudTDMS_SaaS_Free.git
+unzip CloudTDMS_SaaS_Free.zip
 ```
 ```
 cd CloudTDMS_SaaS_Free/
+```
+```
+sudo cp -R CloudTDMS_Saas_Free /var/www/html/CloudTDMS_Saas_Free
+```
+```
+cd /var/www/html/CloudTDMS_Saas_Free
 ```
 ```
 sudo echo "DATABASE_URL=\"mysql://root:password@127.0.0.1:3306/CloudTDMS?serverVersion=mariadb-10.4.21\"" >> .env.local
