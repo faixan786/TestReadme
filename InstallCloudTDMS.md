@@ -8,6 +8,7 @@
 * [Installing composer](#Installing-composer)
 * [Installing symfony](#Installing-symfony)
 * [Installing CloudTDMS](#Installing-CloudTDMS)
+* [Setup VHost](#Setup-VHost)
 
 ## Installing dependencies
 
@@ -116,3 +117,6 @@ sudo composer install
 ```
 symfony console app:setup-database
 ```
+
+## Setup VHost
+Pending...
