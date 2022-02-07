@@ -1,8 +1,12 @@
 # Setup CloudTDMS Free
 
 * [Installing dependencies](#installing-dependencies)
-* [Installing dependencies](#installing-dependencies)
-* [Installing dependencies](#installing-dependencies)
+* [Setup PHP](#Setup-PHP)
+* [Installing MySQLServer](#Installing-MySQLServer)
+* [Downloading and installing PHPMyAdmin](#Downloading-and-installing-PHPMyAdmin)
+* [Removing downloaded folders](#Removing-downloaded-folders)
+* [Installing composer](#Installing-composer)
+* [Installing symfony](#Installing-symfony)
 * [Installing CloudTDMS](#Installing-CloudTDMS)
 
 ## Installing dependencies
