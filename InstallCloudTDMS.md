@@ -1,5 +1,10 @@
 # Setup CloudTDMS Free
 
+* [Installing dependencies](#installing-dependencies)
+* [Installing dependencies](#installing-dependencies)
+* [Installing dependencies](#installing-dependencies)
+* [Installing CloudTDMS](#Installing-CloudTDMS)
+
 ## Installing dependencies
 
 ```
@@ -66,7 +71,7 @@ sudo rm -rf phpMyAdmin-5.1.1-all-languages.zip
 sudo rm -rf phpMyAdmin-5.1.1-all-languages
 ```
 
-## Installing composer...
+## Installing composer
 ```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 ```
@@ -80,7 +85,7 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
-## Installing symfony...
+## Installing symfony
 ```
 wget https://get.symfony.com/cli/installer -O - | bash
 ```
@@ -88,7 +93,7 @@ wget https://get.symfony.com/cli/installer -O - | bash
 sudo mv /home/${USER}/.symfony/bin/symfony /usr/local/bin/symfony
 ```
 
-## Installing CloudTDMS...
+## Installing CloudTDMS
 ```
 cd /var/www/html/
 ```
