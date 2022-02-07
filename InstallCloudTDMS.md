@@ -24,7 +24,7 @@ sudo apt update -y
 sudo apt install php8.0 libapache2-mod-php8.0 -y
 ```
 ```
-sudo apt install php8.0-mysql php8.0-xml
+sudo apt install php8.0-mysql php8.0-xml -y
 ```
 
 ## Installing MySQLServer
