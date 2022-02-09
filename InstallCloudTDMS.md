@@ -173,11 +173,25 @@ DATABASE_URL="mysql://<user>:<password>@127.0.0.1:3306/CloudTDMS"
 where user is the username and password is the password for your MySQL database. <br /><br /><br />
 
 
+<details><summary> <b>Google SSO Setup</b></summary>
+<p>
+
+```
+vi .env.local
+```
+> Replace the *<your_google_client_id>* and *<your_google_client_secret>* with your Client ID and Client secret and save the file
+```
+OAUTH_GOOGLE_CLIENT_ID=<your_google_client_id>
+OAUTH_GOOGLE_CLIENT_SECRET=<your_google_client_secret>
+```
+</p>
+</details><br /><br />
+
 Setup the database by running the following command
 ```
 symfony console app:setup-database
 ```
-
+<br /><br />
 Moving the project to apache2
 ```
 cd
