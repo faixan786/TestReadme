@@ -168,9 +168,9 @@ DATABASE_URL="postgresql://symfony:ChangeMe@127.0.0.1:5432/app?serverVersion=13&
 ```
 to
 ```
-DATABASE_URL="mysql://<user>:<password>@127.0.0.1:3306/CloudTDMS"
+DATABASE_URL="mysql://<user>:<password>@127.0.0.1:3306/<database>"
 ```
-where user is the username and password is the password for your MySQL database. <br /><br /><br />
+where user is the username, password is the password and database is the name of your MySQL database. <br /><br /><br />
 
 
 <details><summary> <b>Google SSO Setup</b></summary>
