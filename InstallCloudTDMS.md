@@ -74,7 +74,7 @@ sudo systemctl restart apache2
 
 ## Removing downloaded folders
 ```
-cd ~
+cd 
 ```
 ```
 sudo rm -rf phpMyAdmin-5.1.1-all-languages.zip
@@ -102,7 +102,10 @@ sudo mv composer.phar /usr/local/bin/composer
 wget https://get.symfony.com/cli/installer -O - | bash
 ```
 ```
-sudo mv /home/${USER}/.symfony/bin/symfony /usr/local/bin/symfony
+cd
+```
+```
+sudo mv .symfony/bin/symfony /usr/local/bin/symfony
 ```
 
 ## Installing CloudTDMS
