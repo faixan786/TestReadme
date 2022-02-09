@@ -170,7 +170,7 @@ to
 ```
 DATABASE_URL="mysql://<user>:<password>@127.0.0.1:3306/CloudTDMS"
 ```
-where user is the username and password is the password for your MySQL database.
+where user is the username and password is the password for your MySQL database. <br /><br /><br />
 
 
 Setup the database by running the following command
