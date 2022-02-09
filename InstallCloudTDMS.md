@@ -198,14 +198,14 @@ Moving the project to apache2
 cd
 ```
 ```
-sudo cp -R CloudTDMS /var/www/CloudTDMS
+sudo cp -R CloudTDMS /var/www/TDMS
 ```
 ```
 cd /var/www/
 ```
 Change the permission to allow apache to read and write
 ```
-sudo chown -R www-data:www-data CloudTDMS/
+sudo chown -R www-data:www-data TDMS/
 ```
 
 
@@ -220,8 +220,8 @@ Change <your_dns> to your DNS in the following snippet and paste it in the file 
     ServerName <your_dns>
     ServerAlias <your_dns>
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/CloudTDMS/public
-    <Directory /var/www/CloudTDMS/public>
+    DocumentRoot /var/www/TDMS/public
+    <Directory /var/www/TDMS/public>
         FallbackResource /index.php
     </Directory>
     ErrorLog ${APACHE_LOG_DIR}/error.log
