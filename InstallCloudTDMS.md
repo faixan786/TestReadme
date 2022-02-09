@@ -42,7 +42,14 @@ sudo apt install php8.0-mysql php8.0-xml -y
 sudo apt install mysql-server -y
 ```
 ```
-echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password';" | sudo mysql
+sudo mysql
+```
+Setup user and password for your datatbase
+```
+ALTER USER '<user>'@'<host>' IDENTIFIED WITH caching_sha2_password BY '<password>';
+```
+```
+exit
 ```
 
 ## Downloading and installing PHPMyAdmin
