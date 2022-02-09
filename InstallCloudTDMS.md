@@ -170,11 +170,56 @@ to
 ```
 DATABASE_URL="mysql://<user>:<password>@127.0.0.1:3306/CloudTDMS"
 ```
-where user is the username and password is the password for your MySQL database
+where user is the username and password is the password for your MySQL database.
+
 
 Setup the database by running the following command
 ```
 symfony console app:setup-database
 ```
+
+Moving the project to apache2
+```
+cd
+```
+```
+sudo cp -R CloudTDMS /var/www/CloudTDMS
+```
+```
+cd /var/www/
+```
+Change the permission to allow apache to read and write
+```
+sudo chown -R www-data:www-data CloudTDMS/
+```
+
+
 ## Setup VHost
-Pending...
+```
+sudo vi /etc/apache2/sites-available/cloudtdms.conf
+```
+
+Change <your_dns> to your DNS in the following snippet and paste it in the file and save it
+```
+<VirtualHost *:80>
+    ServerName <your_dns>
+    ServerAlias <your_dns>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/CloudTDMS/public
+    <Directory /var/www/CloudTDMS/public>
+        FallbackResource /index.php
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+Enable the apache config
+```
+sudo a2ensite cloudtdms.conf
+```
+
+Restart the apache server
+```
+sudo systemctl reload apache2
+```
