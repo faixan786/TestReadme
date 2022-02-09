@@ -176,6 +176,7 @@ where user is the username and password is the password for your MySQL database.
 <details><summary> <b>Google SSO Setup</b></summary>
 <p>
 
+### If you want to use the google sign in, do the following steps
 ```
 vi .env.local
 ```
