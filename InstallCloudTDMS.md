@@ -110,26 +110,71 @@ sudo mv .symfony/bin/symfony /usr/local/bin/symfony
 
 ## Installing CloudTDMS
 ```
-unzip CloudTDMS_SaaS_Free.zip
+cd
+```
+Create a new Symfony project
+```
+symfony new CloudTDMS --version=5.4
 ```
 ```
-cd CloudTDMS_SaaS_Free/
+cd CloudTDMS
+```
+Install the dependencies for the project
+```
+composer require ext-json
+composer require doctrine/orm
+composer require doctrine/doctrine-bundle
+composer require doctrine/doctrine-migrations-bundle
+composer require knpuniversity/oauth2-client-bundle
+composer require league/oauth2-google
+composer require sensio/framework-extra-bundle
+composer require symfony/asset
+composer require symfony/expression-language
+composer require symfony/form
+composer require symfony/intl
+composer require symfony/mime
+composer require symfony/proxy-manager-bridge
+composer require symfony/security-bundle
+composer require symfony/twig-bundle
+composer require symfony/validator
+composer require twig/extra-bundle
+composer require league/oauth2-github
+```
+Install the dev dependencies of the project for PreProd
+```
+composer require --dev doctrine/doctrine-fixtures-bundle
+composer require --dev symfony/web-profiler-bundle
 ```
 ```
-sudo cp -R CloudTDMS_Saas_Free /var/www/html/CloudTDMS_Saas_Free
+cd
+```
+Unzip the downloaded project
+```
+unzip CloudTDMS.zip -d TDMS
 ```
 ```
-cd /var/www/html/CloudTDMS_Saas_Free
+cp -R TDMS/CloudTDMS/. CloudTDMS/
 ```
 ```
-sudo echo "DATABASE_URL=\"mysql://root:password@127.0.0.1:3306/CloudTDMS?serverVersion=mariadb-10.4.21\"" >> .env.local
+cd CloudTDMS
 ```
+Open the .env file
 ```
-sudo composer install
+vi .env
 ```
+Change the following line
+```
+DATABASE_URL="postgresql://symfony:ChangeMe@127.0.0.1:5432/app?serverVersion=13&charset=utf8"
+```
+to
+```
+DATABASE_URL="mysql://<user>:<password>@127.0.0.1:3306/CloudTDMS"
+```
+where user is the username and password is the password for your MySQL database
+
+Setup the database by running the following command
 ```
 symfony console app:setup-database
 ```
-
 ## Setup VHost
 Pending...
