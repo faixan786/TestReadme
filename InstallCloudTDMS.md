@@ -114,7 +114,7 @@ cd
 ```
 Create a new Symfony project
 ```
-symfony new CloudTDMS --version=5.4
+symfony new CloudTDMS --version=5.3
 ```
 ```
 cd CloudTDMS
@@ -122,27 +122,16 @@ cd CloudTDMS
 Install the dependencies for the project
 ```
 composer require ext-json
-composer require doctrine/orm
-composer require doctrine/doctrine-bundle
-composer require doctrine/doctrine-migrations-bundle
-composer require knpuniversity/oauth2-client-bundle
-composer require league/oauth2-google
+composer require doctrine/orm doctrine/doctrine-bundle doctrine/doctrine-migrations-bundle
+composer require knpuniversity/oauth2-client-bundle league/oauth2-google league/oauth2-github
 composer require sensio/framework-extra-bundle
-composer require symfony/asset
-composer require symfony/expression-language
-composer require symfony/form
-composer require symfony/intl
-composer require symfony/mime
-composer require symfony/proxy-manager-bridge
-composer require symfony/security-bundle
-composer require symfony/twig-bundle
-composer require symfony/validator
+composer require symfony/asset symfony/expression-language symfony/form
+composer require symfony/intl symfony/mime symfony/proxy-manager-bridge
+composer require symfony/security-bundle symfony/twig-bundle symfony/validator
 composer require twig/extra-bundle
-composer require league/oauth2-github
 ```
 Install the dev dependencies of the project for PreProd
 ```
-composer require --dev doctrine/doctrine-fixtures-bundle
 composer require --dev symfony/web-profiler-bundle
 ```
 ```
