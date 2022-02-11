@@ -135,6 +135,9 @@ Install the dev dependencies of the project for PreProd
 composer require --dev symfony/web-profiler-bundle
 ```
 ```
+composer require --dev doctrine/doctrine-fixtures-bundle
+```
+```
 cd
 ```
 Unzip the downloaded project
