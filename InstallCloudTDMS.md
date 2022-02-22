@@ -99,13 +99,13 @@ sudo mv composer.phar /usr/local/bin/composer
 
 ## Installing symfony
 ```
-wget https://get.symfony.com/cli/installer -O - | bash
+echo 'deb [trusted=yes] https://repo.symfony.com/apt/ /' | sudo tee /etc/apt/sources.list.d/symfony-cli.list
 ```
 ```
-cd
+sudo apt update
 ```
 ```
-sudo mv .symfony/bin/symfony /usr/local/bin/symfony
+sudo apt install symfony-cli
 ```
 
 ## Installing CloudTDMS
