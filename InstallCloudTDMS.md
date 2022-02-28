@@ -123,12 +123,12 @@ Install the dependencies for the project
 ```
 composer require ext-json
 composer require doctrine/orm doctrine/doctrine-bundle doctrine/doctrine-migrations-bundle
-composer require knpuniversity/oauth2-client-bundle league/oauth2-google league/oauth2-github
+composer require knpuniversity/oauth2-client-bundle league/oauth2-google league/oauth2-github league/oauth2-linkedin
 composer require sensio/framework-extra-bundle
 composer require symfony/asset symfony/expression-language symfony/form
-composer require symfony/intl symfony/mime symfony/proxy-manager-bridge
+composer require symfony/intl symfony/mime symfony/proxy-manager-bridge symfony/mailer
 composer require symfony/security-bundle symfony/twig-bundle symfony/validator
-composer require twig/extra-bundle
+composer require twig/twig twig/extra-bundle symfonycasts/verify-email-bundle
 ```
 Install the dev dependencies of the project for PreProd
 ```
