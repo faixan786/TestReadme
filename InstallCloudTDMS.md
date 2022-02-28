@@ -194,6 +194,20 @@ OAUTH_LINKEDIN_CLIENT_SECRET=<your_linkedin_client_secret>
 ```
 </p>
 </details><br /><br />
+    
+<details><summary> <b>Mailer DSB Setup</b></summary>
+<p>
+
+### You need to provide a DSN for email verification. So, do the following steps
+```
+vi .env.local
+```
+> Replace the *<mailer_dsn_for_email_verification>* with your DSN and save the file
+```
+MAILER_DSN=<mailer_dsn_for_email_verification>
+```
+</p>
+</details><br /><br />
 
 Setup the database by running the following command
 ```
