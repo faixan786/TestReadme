@@ -195,7 +195,7 @@ OAUTH_LINKEDIN_CLIENT_SECRET=<your_linkedin_client_secret>
 </p>
 </details><br /><br />
     
-<details><summary> <b>Mailer DSN Setup</b></summary>
+<details><summary> <b>:exclamation: - Important - Mailer DSN Setup</b></summary>
 <p>
 
 ### You need to provide a DSN for email verification. So, do the following steps
