@@ -179,6 +179,21 @@ OAUTH_GOOGLE_CLIENT_SECRET=<your_google_client_secret>
 ```
 </p>
 </details><br /><br />
+    
+<details><summary> <b>LinkedIn SSO Setup</b></summary>
+<p>
+
+### If you want to use the linkedin sign in, do the following steps
+```
+vi .env.local
+```
+> Replace the *<your_linkedin_client_id>* and *<your_linkedin_client_secret>* with your Client ID and Client secret and save the file
+```
+OAUTH_LINKEDIN_CLIENT_ID=<your_linkedin_client_id>
+OAUTH_LINKEDIN_CLIENT_SECRET=<your_linkedin_client_secret>
+```
+</p>
+</details><br /><br />
 
 Setup the database by running the following command
 ```
